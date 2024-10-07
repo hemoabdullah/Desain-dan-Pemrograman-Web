@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="jquery-ui-1.14.0.custom/jquery-ui.css">
+    <script src="jquery-ui-1.14.0.custom/external/jquery/jquery.js"></script>
+    <script src="jquery-ui-1.14.0.custom/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("#box").load("dasarWeb/praktik_jquery/test-content.html");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="box">
+        <h2>Klik tombol dibawah 
+ untuk menampilkan konten</h2>
+    </div>
+    <button type="button">Klik Saya!</button>
+</body>
+</html> 

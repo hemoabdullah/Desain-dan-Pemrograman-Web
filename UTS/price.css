@@ -1,0 +1,87 @@
+body {
+    background: url('pics/backhome.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1; 
+}
+
+h2 {
+    color: #8B4513; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #8B4513;
+}
+
+.btn-primary {
+    background-color: #8B4513;
+    border: none;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #A0522D;
+}
+
+.alert {
+    text-align: center;
+    background-color: #8B4513;
+    color: white;
+}
+
+
+.container {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-control {
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.form-control:hover {
+    background-color: #f0e5d8; 
+    transform: scale(1.05); 
+}
+
+.form-control option {
+    transition: transform 0.3s ease; 
+}
+
+.form-control option:hover {
+    background-color: #d2b48c; 
+}

@@ -1,0 +1,168 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centralized Container */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #888888;
+}
+
+/* Header */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Row Hover Effect */
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Add Data Button */
+.btn-tambah {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-tambah:hover {
+    background-color: #45a049;
+}
+
+/* Edit and Delete Buttons */
+a.btn-edit, a.btn-kembali {
+    display: inline-block;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* Edit Button */
+a.btn-edit {
+    background-color: #008CBA;
+}
+
+a.btn-edit:hover {
+    background-color: #007bb5;
+}
+
+/* Delete Button */
+a.btn-kembali {
+    background-color: #e74c3c;
+}
+
+a.btn-kembali:hover {
+    background-color: #c0392b;
+}
+
+/* Form Styling */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.radio-group label {
+    display: inline;
+    margin-right: 20px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Return (Kembali) Button */
+button.btn-kembali {
+    background-color: #e74c3c;
+}
+
+button.btn-kembali:hover {
+    background-color: #c0392b;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+
+    .btn-tambah, a.btn-edit, a.btn-kembali, button[type="submit"] {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}
